@@ -1,0 +1,23 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+  max-width: 1920px;
+  margin: 0px auto;
+  background-color: #ffffff;
+  color: #272727;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto Regular;
+}
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.overflow-hidden {
+  overflow-y: hidden;
+  padding-right: 8px;
+}

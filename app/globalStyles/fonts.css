@@ -1,0 +1,55 @@
+@font-face {
+  font-display: swap;
+  font-family: Roboto Bold;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../public/fonts/roboto-bold.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Italic;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../public/fonts/roboto-italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Medium Italic;
+  font-style: italic;
+  font-weight: 500;
+  src: url('../../public/fonts/roboto-medium-italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Medium;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/fonts/roboto-medium.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Thin Italic;
+  font-style: italic;
+  font-weight: 250;
+  src: url('../../public/fonts/roboto-thin-italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto Thin;
+  font-style: normal;
+  font-weight: 250;
+  src: url('../../public/fonts/roboto-thin.woff') format('woff');
+}
