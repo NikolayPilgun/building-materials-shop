@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
+
 import './globalStyles/globals.css'
+
+import Layout from '@/components/layouts/Layout'
 
 export const metadata: Metadata = {
   title: 'Стройматериалы',
@@ -14,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   )
 }
