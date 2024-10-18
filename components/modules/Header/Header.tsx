@@ -24,7 +24,7 @@ const Header = () => {
 
         <ul className='header__links'>
           <li className='header__links__item'>
-            <button className='header__links__item__btn header__links__item__btn--search'></button>
+            <button className='header__links__item__btn header__links__item__btn--search' />
           </li>
           <li className='header__links__item'>
             <Link
@@ -53,10 +53,12 @@ const Header = () => {
         </ul>
 
         <div className='header__callbackRequest'>
-          <p>
-            <a href='tel:+78432039343'>+7 (843) 203-93-43</a>
+          <p className='header__phoneNumber'>
+            <a href='tel:+78432039343'>8(843)203-93-43</a>
           </p>
-          <button className='header__callback__button'>Запросить звонок</button>
+          <button className='header__callback__button'>
+            заказать обратный звонок
+          </button>
         </div>
       </div>
     </header>

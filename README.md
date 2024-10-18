@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Проект Стройматериалы
 
-## Getting Started
+Данный проект разработан на основе макета, доступного по следующей [ссылке Figma](<https://www.figma.com/design/jLAXs3SplmgCfoijgFu47T/Germes-(Copy)?node-id=696-3976&node-type=frame&t=6xWaCxO5OdXMLDcx-0>). В макет внесены изменения для улучшения функциональности сайта и визуального оформления.
 
-First, run the development server:
+## Технологии
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Проект построен с использованием следующих технологий:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**
+- **React**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Библиотеки
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Используемые библиотеки:
 
-## Learn More
+- **Effector**
+- **Effector-React**
+- **TypeScript**
 
-To learn more about Next.js, take a look at the following resources:
+### Установка
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone <url-репозитория>
+   cd <директория-проекта>
+   ```
+2. Установите зависимости с помощью Yarn:
+   ```bash
+   yarn install
+   ```
+3. Установите зависимости с помощью Yarn:
+   ```bash
+   yarn dev
+   ```

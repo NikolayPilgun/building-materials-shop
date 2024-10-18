@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import './globalStyles/globals.css'
+import './globalStyles/header.css'
 
 import Layout from '@/components/layouts/Layout'
 
