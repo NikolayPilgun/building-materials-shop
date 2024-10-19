@@ -13,13 +13,16 @@ const Header = () => {
         </div>
 
         <nav className='header__nav'>
-          <ul className='header__nav__items'>
-            {translations[lang].header.navigation.map((item, index) => (
-              <li key={index} className='header__nav__item'>
-                {item}
-              </li>
-            ))}
-          </ul>
+          <button className='header__nav__burger' />
+          <div className='header__nav__container'>
+            <ul className='header__nav__items'>
+              {translations[lang].header.navigation.map((item, index) => (
+                <li key={index} className='header__nav__item'>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </nav>
 
         <ul className='header__links'>
@@ -54,7 +57,9 @@ const Header = () => {
 
         <div className='header__callbackRequest'>
           <p className='header__phoneNumber'>
-            <a href='tel:+78432039343'>8(843)203-93-43</a>
+            <a href='tel:+78432039343' className='header__phoneNumber-link'>
+              <span className='header__phoneNumber-num'>8(843)203-93-43</span>
+            </a>
           </p>
           <button className='header__callback__button'>
             заказать обратный звонок

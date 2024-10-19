@@ -27,6 +27,7 @@
 .header__nav {
   width: 100%;
   padding: 0px 40px;
+  position: relative;
 }
 .header__nav__items {
   display: flex;
@@ -37,6 +38,42 @@
 .header__nav__item {
   font-size: 18px;
   cursor: pointer;
+}
+/* меню Burger */
+
+.header__nav__burger {
+  display: none;
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.header__nav__burger {
+  color: #5661cb;
+  transition: 0.2s ease-in-out color;
+}
+
+.header__nav__burger::before {
+  background-color: #5661cb;
+  content: '';
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-mask: url(/img/burger.svg) no-repeat 50% 50%;
+  mask: url(/img/burger.svg) no-repeat 50% 50%;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header__nav__burger:hover::before {
+  transition: background-color 0.2s ease-in-out;
+  background-color: #9466ff;
+}
+
+.header__nav__burger:hover {
+  color: #9466ff;
+  transition: 0.2s ease-in-out color;
 }
 
 /* стиль иконок быстрого доступа */
@@ -132,6 +169,88 @@
   .header__callback__button {
     font-size: 14px;
   }
+  .header__nav__item {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1000px) {
+  .logo__img {
+    width: 100px;
+  }
+  .header__links {
+    gap: 5px;
+  }
+  .header__phoneNumber a {
+    font-size: 16px;
+  }
+  .header__callback__button {
+    font-size: 12px;
+  }
+  .header__nav__item {
+    font-size: 14px;
+  }
+  .header__links__item__btn {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 768px) {
+  .header__nav__container {
+    display: none;
+  }
+  .header__nav {
+    width: 25px;
+    height: 25px;
+    order: 1;
+    padding: 0px;
+  }
+  .header__nav__burger {
+    display: block;
+  }
+  .header__callback__button {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .header__callbackRequest {
+    min-height: 26px;
+    min-width: 26px;
+    margin: 0px 10px;
+  }
+  .header__phoneNumber-num {
+    display: none;
+  }
+
+  .header__phoneNumber-link {
+    position: relative;
+  }
+
+  .header__phoneNumber-link {
+    height: 26px;
+    width: 26px;
+    color: #5661cb;
+    transition: 0.2s ease-in-out color;
+  }
+
+  .header__phoneNumber-link::before {
+    background-color: #5661cb;
+    content: '';
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    left: -13px;
+    top: 15px;
+    -webkit-mask: url(/img/phoneNumber.svg) no-repeat 50% 50%;
+    mask: url(/img/phoneNumber.svg) no-repeat 50% 50%;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .header__phoneNumber-link:hover::before {
+    transition: background-color 0.2s ease-in-out;
+    background-color: #9466ff;
+  }
+
+  .header__phoneNumber-link:hover {
+    color: #9466ff;
+    transition: 0.2s ease-in-out color;
+  }
 }
