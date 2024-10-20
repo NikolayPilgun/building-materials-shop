@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import './globalStyles/globals.css'
 import './globalStyles/header.css'
+import './globalStyles/navBarModal.css'
 
 import Layout from '@/components/layouts/Layout'
 

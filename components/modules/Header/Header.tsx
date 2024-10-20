@@ -1,19 +1,36 @@
 import Logo from '@/components/elements/Logo/Logo'
+import { AllowedLangs } from '@/constants/lang'
+import { setLang } from '@/context/lang'
+import { openMenuNav } from '@/context/modals'
 import { useLang } from '@/hooks/useLang'
 import Link from 'next/link'
+import NavBarModal from '../Modals/NavBarModal'
 
 const Header = () => {
   const { lang, translations } = useLang()
 
+  const handleSwitchLang = (lang: string) => {
+    setLang(lang as AllowedLangs)
+    localStorage.setItem('lang', JSON.stringify(lang))
+  }
+
+  const handleSwitchLangToRu = () => handleSwitchLang('ru')
+  const handleSwitchLangToEn = () => handleSwitchLang('en')
+
+  const handleOpenMenu = () => {
+    openMenuNav()
+  }
+
   return (
     <header className='header'>
+      <NavBarModal />
       <div className='header__container'>
         <div className='header__logo'>
           <Logo />
         </div>
 
         <nav className='header__nav'>
-          <button className='header__nav__burger' />
+          <button className='header__nav__burger' onClick={handleOpenMenu} />
           <div className='header__nav__container'>
             <ul className='header__nav__items'>
               {translations[lang].header.navigation.map((item, index) => (
@@ -22,13 +39,28 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            <div className={`header__nav__lang`}>
+              <button
+                className={`header__nav__lang-btn ${
+                  lang === 'ru' ? 'lang-active' : ''
+                }`}
+                onClick={handleSwitchLangToRu}
+              >
+                RU
+              </button>
+              <button
+                className={`header__nav__lang-btn ${
+                  lang === 'en' ? 'lang-active' : ''
+                }`}
+                onClick={handleSwitchLangToEn}
+              >
+                EN
+              </button>
+            </div>
           </div>
         </nav>
 
         <ul className='header__links'>
-          <li className='header__links__item'>
-            <button className='header__links__item__btn header__links__item__btn--search' />
-          </li>
           <li className='header__links__item'>
             <Link
               href='/favorites'
